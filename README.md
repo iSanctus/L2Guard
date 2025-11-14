@@ -14,7 +14,6 @@ Popular L2 bots like **Adrenaline**, **L2Walker**, **L2Tower**, and **L2.Net** w
 - 🪝 Hooking Windows APIs (DirectX, Winsock, User32)
 - 📦 Intercepting and modifying network packets
 
-**CAPTCHA won't stop these** - we need to detect and block the bot programs themselves!
 
 ## L2Guard Solution
 
