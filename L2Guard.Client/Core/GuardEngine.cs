@@ -86,6 +86,17 @@ namespace L2Guard.Client.Core
                 {
                     RaiseStatusChanged("L2Guard initializing...");
 
+                    // CRITICAL: Verify guard integrity before starting
+                    RaiseStatusChanged("Verifying guard integrity...");
+                    if (!VerifyGuardIntegrity())
+                    {
+                        RaiseStatusChanged("TAMPER DETECTED - Guard files have been modified!");
+                        return false;
+                    }
+
+                    // Enforce hardcoded scan interval (prevent tampering via config)
+                    scanIntervalMs = SecurityConfig.SCAN_INTERVAL_MS;
+
                     // Perform initial scan before allowing game to start
                     var initialScan = PerformInitialScan();
                     if (!initialScan.Success)
@@ -94,8 +105,8 @@ namespace L2Guard.Client.Core
                         return false;
                     }
 
-                    // Start continuous monitoring
-                    _scanTimer = new Timer(scanIntervalMs);
+                    // Start continuous monitoring using HARDCODED interval
+                    _scanTimer = new Timer(SecurityConfig.SCAN_INTERVAL_MS);
                     _scanTimer.Elapsed += OnScanTimerElapsed;
                     _scanTimer.Start();
 
@@ -110,6 +121,35 @@ namespace L2Guard.Client.Core
                     return false;
                 }
             }
+        }
+
+        /// <summary>
+        /// Verify guard files haven't been tampered with
+        /// </summary>
+        private bool VerifyGuardIntegrity()
+        {
+            // Check assembly integrity
+            if (!SecurityConfig.VerifyIntegrity())
+            {
+                Debug.WriteLine("Assembly integrity check failed");
+                return false;
+            }
+
+            // Check file integrity
+            if (!SecurityConfig.VerifyFileIntegrity())
+            {
+                Debug.WriteLine("File integrity check failed");
+                return false;
+            }
+
+            // Check code integrity
+            if (!SecurityConfig.VerifyCodeIntegrity())
+            {
+                Debug.WriteLine("Code integrity check failed");
+                return false;
+            }
+
+            return true;
         }
 
         /// <summary>

@@ -38,6 +38,17 @@ Popular L2 bots like **Adrenaline**, **L2Walker**, **L2Tower**, and **L2.Net** w
 └─────────────────────────────────────┘
 ```
 
+## 🔐 Tamper Protection
+
+L2Guard includes **built-in tamper resistance** to prevent users from disabling security features:
+
+- **Hardcoded Security Settings**: All critical settings are compiled into the code, not configurable via JSON
+- **Integrity Verification**: Checks guard files haven't been modified before starting
+- **No Client-Side Config**: Security settings cannot be changed by users
+- **Server Validation**: Server enforces guard requirements and validates versions
+
+**See [SECURITY.md](SECURITY.md) for complete security architecture details.**
+
 ## Features
 
 ### 🔍 Client-Side Detection (C# Guard)
