@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<item id="20012" type="Armor" name="Tattoo Warrior - Lv. 1">
+		<set name="default_action" val="equip" />
+		<set name="bodypart" val="underwear" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="170" />
+		<set name="price" val="0" />
+		<set name="is_oly_restricted" val="true" />				
+		<for>
+			<mul val='1.09' order='0x30' stat='pAtkSpd'/>
+			<mul val='1.3' order='0x30' stat='runSpd'/>		
+			<add val='200' order='0x40' stat='maxHp'/>
+			<add val='200' order='0x40' stat='maxCp'/>
+		</for>
+	</item>
+	
+	<item id="20013" type="Armor" name="Tattoo Warrior - Lv. 2">
+		<set name="default_action" val="equip" />
+		<set name="bodypart" val="underwear" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="170" />
+		<set name="price" val="0" />
+		<set name="is_oly_restricted" val="true" />				
+		<for>
+			<mul val='1.15' order='0x30' stat='pAtkSpd'/>
+			<mul val='1.3' order='0x30' stat='runSpd'/>
+		    <mul val='1.02' order='0x30' stat='pDef'/>			
+			<add val='400' order='0x40' stat='maxHp'/>
+			<add val='400' order='0x40' stat='maxCp'/>
+		</for>
+	</item>
+	
+	<item id="20014" type="Armor" name="Tattoo Warrior - Lv. 3">
+		<set name="default_action" val="equip" />
+		<set name="bodypart" val="underwear" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="170" />
+		<set name="price" val="0" />
+		<set name="is_oly_restricted" val="true" />				
+		<for>
+			<mul val='1.25' order='0x30' stat='pAtkSpd'/>
+			<mul val='1.55' order='0x30' stat='pAtk'/>
+			<mul val='1.3' order='0x30' stat='runSpd'/>
+		    <mul val='1.05' order='0x30' stat='pDef'/>			
+			<add val='600' order='0x40' stat='maxHp'/>
+			<add val='600' order='0x40' stat='maxCp'/>
+		</for>
+	</item>
+	
+		<item id="20015" type="Armor" name="Tattoo Warrior - Lv. 4">
+		<set name="default_action" val="equip" />
+		<set name="bodypart" val="underwear" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="170" />
+		<set name="price" val="0" />
+		<set name="is_oly_restricted" val="true" />				
+		<for>
+			<mul val='1.40' order='0x30' stat='pAtkSpd'/>
+			<mul val='1.65' order='0x30' stat='pAtk'/>
+		    <mul val='1.10' order='0x30' stat='pDef'/>			
+		    <mul val='1.3' order='0x30' stat='runSpd'/>			
+			<add val='800' order='0x40' stat='maxHp'/>
+			<add val='800' order='0x40' stat='maxCp'/>
+		</for>
+	</item>
+	
+		<item id="20016" type="Armor" name="Tattoo Warrior - Lv. 5">
+		<set name="default_action" val="equip" />
+		<set name="bodypart" val="underwear" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="170" />
+		<set name="price" val="0" />
+		<set name="is_oly_restricted" val="true" />				
+		<for>
+		<mul val='1.50' order='0x30' stat='pAtkSpd'/>
+		<mul val='1.79' order='0x30' stat='pAtk'/>
+		<mul val='1.15' order='0x30' stat='pDef'/>		
+		<mul val='1.4' order='0x30' stat='runSpd'/>
+		<add val='1200' order='0x40' stat='maxHp'/>
+		<add val='1200' order='0x40' stat='maxCp'/>
+		</for>
+	</item>
+</list>

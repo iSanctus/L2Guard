@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<list>
+
+  <!-- Greater Dye of CON <Con+4 Dex-4> -->
+  <item id="1">
+    <ingredient id="57" count="100000000"/>
+    <production id="20001" count="10"/>
+  </item>
+
+  <!-- Greater Dye of CON <Con+4 Str-4> -->
+  <item id="2">
+    <ingredient id="57" count="100000000"/>
+    <production id="20002" count="10"/>
+  </item>
+
+  <!-- Greater Dye of DEX <Dex+4 Str-4> -->
+  <item id="3">
+    <ingredient id="57" count="100000000"/>
+    <production id="20003" count="10"/>
+  </item>
+
+  <!-- Greater Dye of DEX <Dex+4 Con-4> -->
+  <item id="4">
+    <ingredient id="57" count="100000000"/>
+    <production id="20004" count="10"/>
+  </item>
+
+  <!-- Greater Dye of INT <Int+4 Wit-4> -->
+  <item id="5">
+    <ingredient id="57" count="100000000"/>
+    <production id="20005" count="10"/>
+  </item>
+
+  <!-- Greater Dye of INT <Int+4 Men-4> -->
+  <item id="6">
+    <ingredient id="57" count="100000000"/>
+    <production id="20006" count="10"/>
+  </item>
+
+  <!-- Greater Dye of MEN <Men+4 Wit-4> -->
+  <item id="7">
+    <ingredient id="57" count="100000000"/>
+    <production id="20007" count="10"/>
+  </item>
+
+  <!-- Greater Dye of MEN <Men+4 Int-4> -->
+  <item id="8">
+    <ingredient id="57" count="100000000"/>
+    <production id="20008" count="10"/>
+  </item>
+
+  <!-- Greater Dye of STR <Str+4 Dex-4> -->
+  <item id="9">
+    <ingredient id="57" count="100000000"/>
+    <production id="20009" count="10"/>
+  </item>
+
+  <!-- Greater Dye of STR <Str+4 Con-4> -->
+  <item id="10">
+    <ingredient id="57" count="100000000"/>
+    <production id="20010" count="10"/>
+  </item>
+  
+    <item id="11">
+    <ingredient id="57" count="100000000"/>
+    <production id="18025" count="10"/>
+  </item>
+
+</list>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	
+	<item id="20011" type="Armor" name="Tattoo Divine">
+		<set name="default_action" val="equip" />
+		<set name="armor_type" val="NONE" />
+		<set name="bodypart" val="face" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_destroyable" val="false" />
+		<set name="material" val="DYESTUFF" />
+		<for>
+    	<mul val='1.05' order='0x30' stat='mAtkSpd'/>
+    	<mul val='1.07' order='0x30' stat='pAtkSpd'/>
+	    <mul val='1.15' order='0x30' stat='pAtk'/>
+		<mul val='1.12' order='0x30' stat='mAtk'/>
+		<mul val='1.10' order='0x30' stat='pDef'/>
+		<mul val='1.07' order='0x30' stat='mDef'/>
+		<mul val='1.05' order='0x30' stat='runSpd'/>
+		<mul val='1.04' order='0x30' stat='accCombat'/>		
+		<mul val='1.04' order='0x30' stat='rEvas'/>		
+		<mul val='1.12' order='0x30' stat='giveHp'/>
+		</for>
+	</item>
+</list>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	
+	<item id="20022" type="Armor" name="Tattoo AIO">
+		<set name="default_action" val="equip" />
+		<set name="armor_type" val="NONE" />
+		<set name="bodypart" val="underwear" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_destroyable" val="false" />
+		<set name="material" val="DYESTUFF" />
+		<for>
+		<mul val='1.40' order='0x30' stat='mAtkSpd'/>
+		<mul val='1.67' order='0x30' stat='mAtk'/>
+		<mul val='1.55' order='0x30' stat='pAtkSpd'/>
+		<mul val='1.89' order='0x30' stat='pAtk'/>
+		<mul val='1.30' order='0x30' stat='pDef'/>
+		<mul val='1.15' order='0x30' stat='mDef'/>
+		<mul val='1.45' order='0x30' stat='runSpd'/>
+		<add val='4200' order='0x40' stat='maxHp'/>
+		<add val='4200' order='0x40' stat='maxCp'/>
+		</for>
+	</item>
+</list>

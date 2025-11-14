@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<!-- Event Shields (Shield) -->
+	<item id="30700" type="Armor" name="Special Shield">
+		<set name="default_action" val="equip" />
+		<set name="bodypart" val="lhand" />
+		<set name="crystal_type" val="S" />
+		<set name="crystal_count" val="188" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="1170" />
+		<set name="is_oly_restricted" val="true" />
+		<for>
+			<sub order="0x10" stat="rEvas" val="8" />
+			<set order="0x08" stat="rShld" val="20" />
+			<set order="0x08" stat="sDef" val="300" />
+			<enchant val="0" order="0x0C" stat="sDef" />
+		</for>
+	</item>
+	<item id="30701" type="Armor" name="Special Shield">
+		<set name="default_action" val="equip" />
+		<set name="bodypart" val="lhand" />
+		<set name="crystal_type" val="S" />
+		<set name="crystal_count" val="188" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="1170" />
+		<set name="is_oly_restricted" val="true" />
+		<for>
+			<sub order="0x10" stat="rEvas" val="8" />
+			<set order="0x08" stat="rShld" val="20" />
+			<set order="0x08" stat="sDef" val="300" />
+			<enchant val="0" order="0x0C" stat="sDef" />
+		</for>
+	</item>
+	<item id="30702" type="Armor" name="Special Shield">
+		<set name="default_action" val="equip" />
+		<set name="bodypart" val="lhand" />
+		<set name="crystal_type" val="S" />
+		<set name="crystal_count" val="188" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="1170" />
+		<set name="is_oly_restricted" val="true" />
+		<for>
+			<sub order="0x10" stat="rEvas" val="8" />
+			<set order="0x08" stat="rShld" val="20" />
+			<set order="0x08" stat="sDef" val="300" />
+			<enchant val="0" order="0x0C" stat="sDef" />
+		</for>
+	</item>
+	<item id="30703" type="Armor" name="Special Shield">
+		<set name="default_action" val="equip" />
+		<set name="bodypart" val="lhand" />
+		<set name="crystal_type" val="S" />
+		<set name="crystal_count" val="188" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="1170" />
+		<set name="is_oly_restricted" val="true" />
+		<for>
+			<sub order="0x10" stat="rEvas" val="8" />
+			<set order="0x08" stat="rShld" val="20" />
+			<set order="0x08" stat="sDef" val="300" />
+			<enchant val="0" order="0x0C" stat="sDef" />
+		</for>
+	</item>
+	<item id="30704" type="Armor" name="Special Shield">
+		<set name="default_action" val="equip" />
+		<set name="bodypart" val="lhand" />
+		<set name="crystal_type" val="S" />
+		<set name="crystal_count" val="188" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="1170" />
+		<set name="is_oly_restricted" val="true" />
+		<for>
+			<sub order="0x10" stat="rEvas" val="8" />
+			<set order="0x08" stat="rShld" val="20" />
+			<set order="0x08" stat="sDef" val="300" />
+			<enchant val="0" order="0x0C" stat="sDef" />
+		</for>
+	</item>
+	<item id="30705" type="Armor" name="Special Shield">
+		<set name="default_action" val="equip" />
+		<set name="bodypart" val="lhand" />
+		<set name="crystal_type" val="S" />
+		<set name="crystal_count" val="188" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="1170" />
+		<set name="is_oly_restricted" val="true" />
+		<for>
+			<sub order="0x10" stat="rEvas" val="8" />
+			<set order="0x08" stat="rShld" val="20" />
+			<set order="0x08" stat="sDef" val="300" />
+			<enchant val="0" order="0x0C" stat="sDef" />
+		</for>
+	</item>
+	<item id="30706" type="Armor" name="Special Shield">
+		<set name="default_action" val="equip" />
+		<set name="bodypart" val="lhand" />
+		<set name="crystal_type" val="S" />
+		<set name="crystal_count" val="188" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="1170" />
+		<set name="is_oly_restricted" val="true" />
+		<for>
+			<sub order="0x10" stat="rEvas" val="8" />
+			<set order="0x08" stat="rShld" val="20" />
+			<set order="0x08" stat="sDef" val="300" />
+			<enchant val="0" order="0x0C" stat="sDef" />
+		</for>
+	</item>
+	<item id="30707" type="Armor" name="Special Shield">
+		<set name="default_action" val="equip" />
+		<set name="bodypart" val="lhand" />
+		<set name="crystal_type" val="S" />
+		<set name="crystal_count" val="188" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="1170" />
+		<set name="is_oly_restricted" val="true" />
+		<for>
+			<sub order="0x10" stat="rEvas" val="8" />
+			<set order="0x08" stat="rShld" val="20" />
+			<set order="0x08" stat="sDef" val="300" />
+			<enchant val="0" order="0x0C" stat="sDef" />
+		</for>
+	</item>
+	<item id="30708" type="Armor" name="Special Shield">
+		<set name="default_action" val="equip" />
+		<set name="bodypart" val="lhand" />
+		<set name="crystal_type" val="S" />
+		<set name="crystal_count" val="188" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="1170" />
+		<set name="is_oly_restricted" val="true" />
+		<for>
+			<sub order="0x10" stat="rEvas" val="8" />
+			<set order="0x08" stat="rShld" val="20" />
+			<set order="0x08" stat="sDef" val="300" />
+			<enchant val="0" order="0x0C" stat="sDef" />
+		</for>
+	</item>
+	<item id="30709" type="Armor" name="Special Shield">
+		<set name="default_action" val="equip" />
+		<set name="bodypart" val="lhand" />
+		<set name="crystal_type" val="S" />
+		<set name="crystal_count" val="188" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="1170" />
+		<set name="is_oly_restricted" val="true" />
+		<for>
+			<sub order="0x10" stat="rEvas" val="8" />
+			<set order="0x08" stat="rShld" val="20" />
+			<set order="0x08" stat="sDef" val="300" />
+			<enchant val="0" order="0x0C" stat="sDef" />
+		</for>
+	</item>
+	<item id="30710" type="Armor" name="Special Shield">
+		<set name="default_action" val="equip" />
+		<set name="bodypart" val="lhand" />
+		<set name="crystal_type" val="S" />
+		<set name="crystal_count" val="188" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="1170" />
+		<set name="is_oly_restricted" val="true" />
+		<for>
+			<sub order="0x10" stat="rEvas" val="8" />
+			<set order="0x08" stat="rShld" val="20" />
+			<set order="0x08" stat="sDef" val="300" />
+			<enchant val="0" order="0x0C" stat="sDef" />
+		</for>
+	</item>
+	<item id="30711" type="Armor" name="Special Shield">
+		<set name="default_action" val="equip" />
+		<set name="bodypart" val="lhand" />
+		<set name="crystal_type" val="S" />
+		<set name="crystal_count" val="188" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="1170" />
+		<set name="is_oly_restricted" val="true" />
+		<for>
+			<sub order="0x10" stat="rEvas" val="8" />
+			<set order="0x08" stat="rShld" val="20" />
+			<set order="0x08" stat="sDef" val="300" />
+			<enchant val="0" order="0x0C" stat="sDef" />
+		</for>
+	</item>
+	<item id="30712" type="Armor" name="Special Shield">
+		<set name="default_action" val="equip" />
+		<set name="bodypart" val="lhand" />
+		<set name="crystal_type" val="S" />
+		<set name="crystal_count" val="188" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="1170" />
+		<set name="is_oly_restricted" val="true" />
+		<for>
+			<sub order="0x10" stat="rEvas" val="8" />
+			<set order="0x08" stat="rShld" val="20" />
+			<set order="0x08" stat="sDef" val="300" />
+			<enchant val="0" order="0x0C" stat="sDef" />
+		</for>
+	</item>
+	
+</list>

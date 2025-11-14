@@ -1,0 +1,64 @@
+<html>
+<title>..:: * L2 TERGON * ::..</title>
+<center>
+<br>
+
+<!-- ComboBox de seleção de classe -->
+<table width=230>
+<tr>
+    <td><font color="LEVEL">Your new class:</font></td>
+    <td>
+        <combobox width=105 var="newClass" list="Duelist;DreadNought;Phoenix_Knight;Hell_Knight;Sagittarius;Adventurer;Archmage;Soultaker;Arcana_Lord;Cardinal;Hierophant;Eva_Templar;Sword_Muse;Wind_Rider;Moonli_Sentinel;Mystic_Muse;Elemental_Master;Eva_Saint;Shillien_Templar;Spectral_Dancer;Ghost_Hunter;Ghost_Sentinel;Storm_Screamer;Spectral_Master;Shillen_Saint;Titan;Grand_Khauatari;Dominator;Doomcryer;Fortune_Seeker;Maestro">
+        </combobox>
+    </td>
+</tr>
+</table>
+
+<br>
+
+<!-- Cabeçalho estilizado -->
+<table width="315" bgcolor="000000">
+<tr>
+<td></td>
+<td><center><font color="LEVEL">Class Base Menu</font></center></td>
+<td></td>
+</tr>
+</table>
+
+<br>
+
+<!-- Instruções -->
+<table width="315" bgcolor="000000">
+<tr>
+<td><img src="L2UI.bbs_boardmaster" width=16 height=16></td>
+<td><font color="00f4ff">- Select your new base class carefully. All Hero status, points, and fights will be reset.</font></td>
+</tr>
+<tr>
+<td><img src="L2UI.bbs_boardmaster" width=16 height=16></td>
+<td><font color="00f4ff">- Your skills and dyes will be removed.</font></td>
+</tr>
+</table>
+
+<br>
+
+<!-- Botão para enviar escolha -->
+<center>
+<table width=246 align=center>
+<tr>
+    <td>
+        <button value="Set New Base Class"
+                action="bypass -h class_index_select $newClass"
+                width=240 height=20
+                back="Doda_buttons.button240"
+                fore="Doda_buttons.button240">
+        </button>
+    </td>
+</tr>
+</table>
+</center>
+
+<br>
+<img src="L2UI.SquareBlank" width=300 height=0>
+</center>
+</body>
+</html>

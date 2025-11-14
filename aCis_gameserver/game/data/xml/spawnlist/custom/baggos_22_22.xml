@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<territory name="baggos_1759862951423" minZ="-3408" maxZ="-3392">
+		<node x="83183" y="148443" />
+		<node x="83083" y="148443" />
+		<node x="83083" y="148343" />
+		<node x="83183" y="148343" />
+	</territory>
+	<npcmaker name="baggos_73089581008400" territory="baggos_1759862951423" maximumNpcs="1">
+		<npc id="50008" pos="83133;148393;-3408;16384" total="1" respawn="60sec" /> <!-- Baggos -->
+	</npcmaker>
+</list>

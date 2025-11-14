@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<item id="9512" type="EtcItem" name="Clan Full">
+		<set name="material" val="STEEL" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemClan" />
+	</item>
+    <!-- Change Name -->
+    <item id="18025" type="EtcItem" name="Change: Name">
+        <set name="material" val="STEEL" />
+        <set name="is_destroyable" val="true" />
+        <set name="is_dropable" val="false" />
+        <set name="is_sellable" val="false" />
+        <set name="is_depositable" val="false" />
+        <set name="is_stackable" val="false" />
+        <set name="handler" val="ActiveItemSpecial" />
+    </item>
+
+    <!-- Change Nobles -->
+    <item id="18026" type="EtcItem" name="Change: Nobless">
+        <set name="material" val="STEEL" />
+        <set name="is_destroyable" val="true" />
+        <set name="is_dropable" val="false" />
+        <set name="is_sellable" val="false" />
+        <set name="is_depositable" val="false" />
+        <set name="is_stackable" val="false" />
+        <set name="handler" val="ActiveItemSpecial" />
+    </item>
+
+    <!-- Change Gender -->
+    <item id="18027" type="EtcItem" name="Change: Sexy">
+        <set name="material" val="STEEL" />
+        <set name="is_destroyable" val="true" />
+        <set name="is_dropable" val="false" />
+        <set name="is_sellable" val="false" />
+        <set name="is_depositable" val="false" />
+        <set name="is_stackable" val="false" />
+        <set name="handler" val="ActiveItemSpecial" />
+    </item>
+
+    <!-- Change Class -->
+    <item id="18028" type="EtcItem" name="Change: ClassBase">
+        <set name="material" val="STEEL" />
+        <set name="is_destroyable" val="true" />
+        <set name="is_dropable" val="false" />
+        <set name="is_sellable" val="false" />
+        <set name="is_depositable" val="false" />
+        <set name="is_stackable" val="false" />
+        <set name="handler" val="ActiveItemSpecial" />
+    </item>
+
+    <!-- Extra Special Item -->
+    <item id="18029" type="EtcItem" name="Special Item - Troca-Name">
+        <set name="material" val="STEEL" />
+        <set name="is_destroyable" val="true" />
+        <set name="is_dropable" val="false" />
+        <set name="is_sellable" val="false" />
+        <set name="is_depositable" val="false" />
+        <set name="is_stackable" val="false" />
+        <set name="handler" val="ActiveItemSpecial" />
+    </item>
+</list>
