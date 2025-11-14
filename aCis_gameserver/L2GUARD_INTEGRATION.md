@@ -251,7 +251,7 @@ git checkout main
 ## Support
 
 For L2Guard issues, see:
-- Main repository: https://github.com/yourorg/L2Guard
+- Main repository: https://github.com/iSanctus/L2Guard
 - Documentation: QUICKSTART.md, INTEGRATION_GUIDE.md, SECURITY.md
 
 For aCis integration issues:
