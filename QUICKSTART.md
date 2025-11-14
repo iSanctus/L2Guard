@@ -603,6 +603,6 @@ private readonly HashSet<string> _whitelistedDLLs = new(StringComparer.OrdinalIg
 
 - **Integration Guide:** INTEGRATION_GUIDE.md (detailed)
 - **Security Info:** SECURITY.md (architecture)
-- **GitHub Issues:** https://github.com/yourserver/L2Guard/issues
+- **GitHub Issues:** https://github.com/iSanctus/L2Guard/issues
 
 Good luck! 🛡️
