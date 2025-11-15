@@ -2,7 +2,7 @@
 title aCis loginserver console
 COLOR 05
 :start
-java -Xmx32m -cp ./libs/*; net.sf.l2j.loginserver.LoginServer
+java -Xmx32m -cp ../libs/* net.sf.l2j.loginserver.LoginServer
 if ERRORLEVEL 2 goto restart
 if ERRORLEVEL 1 goto error
 goto end

@@ -4,7 +4,7 @@ COLOR 05
 :start
 REM -------------------------------------
 REM Default parameters for a basic server.
-java -Xmx2G -cp ./libs/*; net.sf.l2j.gameserver.GameServer
+java -Xmx2G -cp ../libs/* net.sf.l2j.gameserver.GameServer
 REM -------------------------------------
 if ERRORLEVEL 2 goto restart
 if ERRORLEVEL 1 goto error
