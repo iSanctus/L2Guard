@@ -24,15 +24,21 @@ This is a ready-to-use aCis server that includes:
 
 ## Quick Start
 
-### 1. Download Dependencies
+### 1. Clone and Setup
 
-Place in `libs/` folder:
+All dependencies are included! The `libs/` folder contains:
+- ✅ mariadb-java-client-3.1.4.jar
+- ✅ gson-2.10.1.jar
+- ✅ slf4j-api-2.0.9.jar
+- ✅ logback-classic-1.4.11.jar
+- ✅ logback-core-1.4.11.jar
+
+No manual downloads needed - just clone and compile!
+
+If you need to re-download dependencies for any reason, run:
 ```bash
-cd libs/
-wget https://repo1.maven.org/maven2/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar
-wget https://repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar
-wget https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.4.11/logback-classic-1.4.11.jar
-wget https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.4.11/logback-core-1.4.11.jar
+./download-dependencies.sh    # Linux/Mac
+download-dependencies.bat     # Windows
 ```
 
 ### 2. Compile

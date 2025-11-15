@@ -1,50 +1,32 @@
 # Eclipse Setup Guide for L2Guard Integration
 
-## Quick Fix for Compilation Errors
+## Good News: Dependencies Included!
 
-You're getting 63 errors because the required JAR dependencies are not yet downloaded. Follow these steps:
+All required JAR dependencies are now included in the `libs/` folder when you clone the repository. You should NOT see any compilation errors if you're using the latest version of the branch.
 
-### Step 1: Download Required JARs
+### Verify JARs Are Present
 
-**Option A: Using Terminal (Recommended)**
+Check that your `libs/` folder contains these 5 files:
+- ✅ mariadb-java-client-3.1.4.jar (already there)
+- ✅ gson-2.10.1.jar (included)
+- ✅ slf4j-api-2.0.9.jar (included)
+- ✅ logback-classic-1.4.11.jar (included)
+- ✅ logback-core-1.4.11.jar (included)
 
-Open terminal in the `libs/` folder and run:
-
+If these files are missing, pull the latest changes:
 ```bash
-cd libs/
-
-# Download Gson (JSON library)
-curl -O https://repo1.maven.org/maven2/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar
-
-# Download SLF4J API (Logging interface)
-curl -O https://repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar
-
-# Download Logback Classic (Logging implementation)
-curl -O https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.4.11/logback-classic-1.4.11.jar
-
-# Download Logback Core (Logging core)
-curl -O https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.4.11/logback-core-1.4.11.jar
+git pull origin claude/acis-server-integration-01ChHJtYTSc4CiezfytgedqB
 ```
 
-**Option B: Manual Download**
+Or use the automated download scripts:
+```bash
+./download-dependencies.sh    # Linux/Mac
+download-dependencies.bat     # Windows
+```
 
-If terminal doesn't work, download these files manually and place them in `libs/`:
+### Refresh Eclipse
 
-1. **gson-2.10.1.jar**
-   - URL: https://repo1.maven.org/maven2/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar
-
-2. **slf4j-api-2.0.9.jar**
-   - URL: https://repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar
-
-3. **logback-classic-1.4.11.jar**
-   - URL: https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.4.11/logback-classic-1.4.11.jar
-
-4. **logback-core-1.4.11.jar**
-   - URL: https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.4.11/logback-core-1.4.11.jar
-
-### Step 2: Refresh Eclipse
-
-After downloading the JARs:
+After importing the project into Eclipse:
 
 1. Right-click on your project in Eclipse
 2. Select **"Refresh"** (or press F5)
@@ -52,18 +34,16 @@ After downloading the JARs:
 4. Select **"Clean all projects"**
 5. Click **OK**
 
-Eclipse will automatically rebuild and all 63 errors should disappear!
+Eclipse will automatically rebuild and you should see **0 errors**!
 
-### Step 3: Verify Setup
+### Verify Setup
 
-After refresh, you should see in `libs/` folder:
-- ✅ mariadb-java-client-3.1.4.jar (already there)
-- ✅ gson-2.10.1.jar (newly added)
-- ✅ slf4j-api-2.0.9.jar (newly added)
-- ✅ logback-classic-1.4.11.jar (newly added)
-- ✅ logback-core-1.4.11.jar (newly added)
-
-All JARs should show up in **"Referenced Libraries"** in Eclipse's Project Explorer.
+All JARs should show up in **"Referenced Libraries"** in Eclipse's Project Explorer:
+- ✅ mariadb-java-client-3.1.4.jar
+- ✅ gson-2.10.1.jar
+- ✅ slf4j-api-2.0.9.jar
+- ✅ logback-classic-1.4.11.jar
+- ✅ logback-core-1.4.11.jar
 
 ## What These Libraries Do
 
@@ -73,11 +53,12 @@ All JARs should show up in **"Referenced Libraries"** in Eclipse's Project Explo
 
 ## Troubleshooting
 
-### If errors persist after download:
+### If you see compilation errors:
 
 1. **Verify JARs are in the right location**
-   - They must be in: `PROJECT_TARGON_409/libs/` (or your project name)
+   - They must be in: `aCis_gameserver/libs/` (or your project name)
    - Not in subdirectories
+   - If missing, pull the latest changes or run the download script
 
 2. **Check Eclipse classpath**
    - Right-click project → **"Build Path"** → **"Configure Build Path"**
