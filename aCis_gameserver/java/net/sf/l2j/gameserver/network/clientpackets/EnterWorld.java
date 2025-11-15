@@ -35,6 +35,8 @@ import net.sf.l2j.gameserver.network.serverpackets.ActionFailed;
 import net.sf.l2j.gameserver.network.serverpackets.Die;
 import net.sf.l2j.gameserver.network.serverpackets.EtcStatusUpdate;
 import net.sf.l2j.gameserver.network.serverpackets.ExMailArrived;
+import net.sf.l2j.gameserver.network.serverpackets.ExShowScreenMessage;
+import net.sf.l2j.gameserver.network.serverpackets.ExShowScreenMessage.SMPOS;
 import net.sf.l2j.gameserver.network.serverpackets.ExStorageMaxCount;
 import net.sf.l2j.gameserver.network.serverpackets.FriendList;
 import net.sf.l2j.gameserver.network.serverpackets.HennaInfo;
@@ -79,18 +81,14 @@ public class EnterWorld extends L2GameClientPacket
 
 		if (!com.l2guard.server.L2GuardValidator.getInstance().registerPlayer(accountName, ipAddress))
 		{
-			player.sendMessage("╔══════════════════════════════════════════╗");
-			player.sendMessage("║  L2Guard Anti-Bot Protection Required!  ║");
-			player.sendMessage("╚══════════════════════════════════════════╝");
-			player.sendMessage("");
-			player.sendMessage("This server uses L2Guard to prevent botting.");
-			player.sendMessage("Please download L2Guard from:");
-			player.sendMessage("https://yourserver.com/l2guard");
-			player.sendMessage("");
-			player.sendMessage("For support, join our Discord.");
+			// Show screen message in the middle
+			player.sendPacket(new ExShowScreenMessage("L2Guard Not Detected", 8000, SMPOS.MIDDLE_CENTER, true));
 
-			// Schedule disconnect after 3 seconds to allow messages to be displayed
-			ThreadPool.schedule(() -> player.logout(true), 3000);
+			// Send chat message
+			player.sendMessage("Disconnecting - L2Guard not detected. Contact Administration.");
+
+			// Schedule disconnect after 8 seconds to allow messages to be displayed
+			ThreadPool.schedule(() -> player.logout(false), 8000);
 			return;
 		}
 
