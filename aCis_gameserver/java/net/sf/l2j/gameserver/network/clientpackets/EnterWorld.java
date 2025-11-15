@@ -81,14 +81,16 @@ public class EnterWorld extends L2GameClientPacket
 
 		if (!com.l2guard.server.L2GuardValidator.getInstance().registerPlayer(accountName, ipAddress))
 		{
-			// Show screen message in the middle
-			player.sendPacket(new ExShowScreenMessage("L2Guard Not Detected", 8000, SMPOS.MIDDLE_CENTER, true));
-
-			// Send chat message
+			// Send chat message immediately
 			player.sendMessage("Disconnecting - L2Guard not detected. Contact Administration.");
 
-			// Schedule disconnect after 8 seconds to allow messages to be displayed
-			ThreadPool.schedule(() -> player.logout(false), 8000);
+			// Delay screen message slightly to ensure player is ready to receive it
+			ThreadPool.schedule(() -> {
+				player.sendPacket(new ExShowScreenMessage("L2Guard Not Detected", 10000, SMPOS.TOP_CENTER, true));
+			}, 1000);
+
+			// Schedule disconnect after 10 seconds to allow messages to be displayed
+			ThreadPool.schedule(() -> player.logout(false), 10000);
 			return;
 		}
 
