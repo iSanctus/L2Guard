@@ -4,5 +4,9 @@
 	<classpathentry kind="src" path="game/config"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk-21"/>
 	<classpathentry kind="lib" path="libs/mariadb-java-client-3.1.4.jar"/>
+	<classpathentry kind="lib" path="libs/gson-2.10.1.jar"/>
+	<classpathentry kind="lib" path="libs/slf4j-api-2.0.9.jar"/>
+	<classpathentry kind="lib" path="libs/logback-classic-1.4.11.jar"/>
+	<classpathentry kind="lib" path="libs/logback-core-1.4.11.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

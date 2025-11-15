@@ -87,7 +87,7 @@ public class EnterWorld extends L2GameClientPacket
 			player.sendMessage("https://yourserver.com/l2guard");
 			player.sendMessage("");
 			player.sendMessage("For support, join our Discord.");
-			player.logout();
+			player.logout(true);
 			return;
 		}
 
