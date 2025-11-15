@@ -3,6 +3,7 @@ package net.sf.l2j.gameserver.network.clientpackets;
 import java.util.Map.Entry;
 
 import net.sf.l2j.Config;
+import net.sf.l2j.commons.pool.ThreadPool;
 import net.sf.l2j.gameserver.communitybbs.manager.MailBBSManager;
 import net.sf.l2j.gameserver.data.SkillTable.FrequentSkill;
 import net.sf.l2j.gameserver.data.manager.CastleManager;
@@ -87,7 +88,9 @@ public class EnterWorld extends L2GameClientPacket
 			player.sendMessage("https://yourserver.com/l2guard");
 			player.sendMessage("");
 			player.sendMessage("For support, join our Discord.");
-			player.logout(true);
+
+			// Schedule disconnect after 3 seconds to allow messages to be displayed
+			ThreadPool.schedule(() -> player.logout(true), 3000);
 			return;
 		}
 
