@@ -67,8 +67,8 @@
 		</copy>
 	</target>
 
-	<target name="dist-local" depends="prepare-local,prepare-final,export" description="Create distribution files and Zip one into 'Zip' folder.">
-		<zip destfile="${buildZip}/Trunk.zip" basedir="${build.dist}" update="true" />
-		<delete dir="${build}" />
+	<target name="dist-local" depends="prepare-local,prepare-final,export" description="Create distribution files in 'build/dist/Trunk' folder.">
+		<echo message="Server files prepared in: ${build.dist.server}" />
+		<echo message="You can now run the server from the Trunk folder." />
 	</target>
 </project>
